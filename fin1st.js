@@ -4,9 +4,10 @@ $(document).ready(function () {
         if ($(this).hasClass("collapsed")) {
             icon.text("➖");
         } else {
-            icon.text("➕"); 
+            icon.text("➕");
         }
     });
+
     $(".accordion-button").on("click", function () {
         var target = $(this).attr("data-bs-target");
         setTimeout(function () {
@@ -16,19 +17,27 @@ $(document).ready(function () {
                 },
                 500
             );
-        }, 300); 
+        }, 300);
     });
 });
 
 $(document).ready(function () {
-    $(".service-category").css("opacity", "0");6
+    $(".card, .service-category, .hero-section, .faq-section").css("opacity", "0");
     $(window).on("scroll", function () {
-        $(".service-category").each(function () {
+        $(".card, .service-category, .hero-section, .faq-section").each(function () {
             var scrollTop = $(window).scrollTop();
             var elementTop = $(this).offset().top - $(window).height() + 100;
             if (scrollTop > elementTop) {
                 $(this).animate({ opacity: 1 }, 600);
             }
         });
+    });
+});
+
+
+// Toggle FAQ answers
+$(document).ready(function () {
+    $('.accordion-button').on('click', function () {
+        $(this).next('.accordion-collapse').toggleClass('show');
     });
 });
