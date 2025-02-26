@@ -12,7 +12,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg sticky-top bg-light shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">TechInnovate</a>
+            <a class="navbar-brand" href="HOMEf.html">
+                <img src="logoatom.png" alt="atom" style="height: 50px;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,10 +68,10 @@
     <section class="container py-5">
         <h2 class="text-center">Connect with Experts</h2>
         <p class="text-center">Find mentors, investors, and industry leaders.</p>
-        <form class="mx-auto" style="max-width: 600px;">
-            <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name"></div>
-            <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email"></div>
-            <div class="mb-3"><textarea class="form-control" rows="3" placeholder="Your Message"></textarea></div>
+        <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3"><input type="text" class="form-control" id="name" placeholder="Your Name"></div>
+            <div class="mb-3"><input type="email" class="form-control" id="email" placeholder="Your Email"></div>
+            <div class="mb-3"><textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea></div>
             <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
     </section>
@@ -182,5 +184,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="fin1st.js"></script>
+    <script src="appear.js"></script>
 </body>
 </html>
